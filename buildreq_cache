@@ -1,0 +1,13 @@
+0.008001
+perl(Data::Dumper::Concise)
+perl(Devel::GlobalDestruction)
+perl(Exporter::Declare)
+perl(Meta::Builder)
+perl(Module::Runtime)
+perl(Moo)
+perl(Role::Tiny)
+perl(Sub::Defer)
+perl(Sub::Exporter::Progressive)
+perl(Test::Fatal)
+perl(Try::Tiny)
+perl(aliased)
