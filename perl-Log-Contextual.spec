@@ -4,7 +4,7 @@
 #
 Name     : perl-Log-Contextual
 Version  : 0.008001
-Release  : 9
+Release  : 10
 URL      : https://cpan.metacpan.org/authors/id/F/FR/FREW/Log-Contextual-0.008001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/F/FR/FREW/Log-Contextual-0.008001.tar.gz
 Summary  : 'Simple logging interface with a contextual log'
@@ -35,6 +35,7 @@ version 0.008001
 Summary: dev components for the perl-Log-Contextual package.
 Group: Development
 Provides: perl-Log-Contextual-devel = %{version}-%{release}
+Requires: perl-Log-Contextual = %{version}-%{release}
 
 %description dev
 dev components for the perl-Log-Contextual package.
