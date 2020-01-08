@@ -4,13 +4,14 @@
 #
 Name     : perl-Log-Contextual
 Version  : 0.008001
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/F/FR/FREW/Log-Contextual-0.008001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/F/FR/FREW/Log-Contextual-0.008001.tar.gz
 Summary  : 'Simple logging interface with a contextual log'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Log-Contextual-license = %{version}-%{release}
+Requires: perl-Log-Contextual-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Data::Dumper::Concise)
 BuildRequires : perl(Devel::GlobalDestruction)
@@ -49,14 +50,24 @@ Group: Default
 license components for the perl-Log-Contextual package.
 
 
+%package perl
+Summary: perl components for the perl-Log-Contextual package.
+Group: Default
+Requires: perl-Log-Contextual = %{version}-%{release}
+
+%description perl
+perl components for the perl-Log-Contextual package.
+
+
 %prep
 %setup -q -n Log-Contextual-0.008001
+cd %{_builddir}/Log-Contextual-0.008001
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
+export LANG=C.UTF-8
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make  %{?_smp_mflags}
@@ -66,7 +77,7 @@ else
 fi
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
@@ -75,7 +86,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Log-Contextual
-cp LICENSE %{buildroot}/usr/share/package-licenses/perl-Log-Contextual/LICENSE
+cp %{_builddir}/Log-Contextual-0.008001/LICENSE %{buildroot}/usr/share/package-licenses/perl-Log-Contextual/1e40fc1cb7b56a9fab2b5614f9c4b155f40f16db
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -88,17 +99,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Easy/Default.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Easy/Package.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Role/Router.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Role/Router/HasLogger.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Role/Router/SetLogger.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Role/Router/WithLogger.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/Router.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/SimpleLogger.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/TeeLogger.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Log/Contextual/WarnLogger.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -116,4 +116,18 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/perl-Log-Contextual/LICENSE
+/usr/share/package-licenses/perl-Log-Contextual/1e40fc1cb7b56a9fab2b5614f9c4b155f40f16db
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Easy/Default.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Easy/Package.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Role/Router.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Role/Router/HasLogger.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Role/Router/SetLogger.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Role/Router/WithLogger.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/Router.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/SimpleLogger.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/TeeLogger.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Log/Contextual/WarnLogger.pm
