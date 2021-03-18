@@ -4,7 +4,7 @@
 #
 Name     : perl-Log-Contextual
 Version  : 0.008001
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/F/FR/FREW/Log-Contextual-0.008001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/F/FR/FREW/Log-Contextual-0.008001.tar.gz
 Summary  : 'Simple logging interface with a contextual log'
@@ -120,14 +120,14 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Easy/Default.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Easy/Package.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Role/Router.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Role/Router/HasLogger.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Role/Router/SetLogger.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Role/Router/WithLogger.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/Router.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/SimpleLogger.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/TeeLogger.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Log/Contextual/WarnLogger.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Easy/Default.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Easy/Package.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router/HasLogger.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router/SetLogger.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router/WithLogger.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Router.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/SimpleLogger.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/TeeLogger.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/WarnLogger.pm
