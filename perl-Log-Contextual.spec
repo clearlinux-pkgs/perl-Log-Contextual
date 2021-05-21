@@ -120,14 +120,14 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Easy/Default.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Easy/Package.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router/HasLogger.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router/SetLogger.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Role/Router/WithLogger.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/Router.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/SimpleLogger.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/TeeLogger.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Log/Contextual/WarnLogger.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Easy/Default.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Easy/Package.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Role/Router.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Role/Router/HasLogger.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Role/Router/SetLogger.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Role/Router/WithLogger.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/Router.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/SimpleLogger.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/TeeLogger.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Log/Contextual/WarnLogger.pm
