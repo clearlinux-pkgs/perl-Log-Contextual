@@ -1,8 +1,9 @@
-0.009000
+0.009001
 perl(Data::Dumper::Concise)
 perl(Moo)
 perl(Moo::Role)
 perl(Role::Tiny)
 perl(Sub::Quote)
 perl(Test::Fatal)
+perl(Test::Needs)
 perl(Try::Tiny)
