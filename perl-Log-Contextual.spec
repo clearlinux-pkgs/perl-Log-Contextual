@@ -7,7 +7,7 @@
 #
 Name     : perl-Log-Contextual
 Version  : 0.009001
-Release  : 29
+Release  : 30
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Log-Contextual-0.009001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Log-Contextual-0.009001.tar.gz
 Summary  : 'Simple logging interface with a contextual log'
